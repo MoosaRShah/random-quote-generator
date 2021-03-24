@@ -8,8 +8,9 @@ function newQuote() {
   fetch('https://api.quotable.io/random')
     .then(response => response.json())
     .then(data => {
-      quote.textContent = data.content
+      //   quote.textContent = data.content
       author.textContent = data.author
+      quote.innerHTML = `<span class="quote pr-2"><i class='bx bxs-quote-alt-left' ></i></span>${data.content}`
     })
 }
 //trigger function on button click

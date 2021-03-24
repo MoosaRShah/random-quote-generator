@@ -4,14 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
     <title>Random Quote Machine</title>
   </head>
   <body>
-    <div id="quote-box">
-      <div id="text">Fetching Quote</div>
-      <div id="author">Fetching Quote Author</div>
-      <button id="new-quote">new quote</button>
-      <button id="tweet">tweet tweet</button>
+    <!-- <nav class="display-3 bg-primary">Random-joke-generator</nav> -->
+    <div class="container h-100 d-flex align-items-center">
+      <div class="card mx-auto" style="width: 30rem">
+        <div class="card-body">
+          <h2 class="text-center text-primary display-5">
+            Random Joke Generator
+          </h2>
+          <hr />
+          <h5 class="card-title" id="text"> Fetching Quote</h5>
+          <h6 class="card-subtitle mb-2 text-secondary" id="author">
+            Fetching Quote Author
+          </h6>
+          <button class="btn btn-primary" id="new-quote">new quote</button>
+          <button class="btn btn-info" id="tweet"><i class='bx bxl-twitter'></i></i></button>
+        </div>
+      </div>
     </div>
 
     <script src="app.js"></script>
